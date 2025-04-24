@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Manpower Marvel - Signup</title>
+  <meta name="description" content="Signup for Manpower Marvel" />
+  <meta name="keywords" content="signup, Manpower Marvel, register" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: url('assets/img/hero-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+    }
+
+    .header {
+      background-color: transparent;
+      padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo .sitename {
+      color: #fff !important;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    .signup-container {
+      max-width: 500px;
+      margin: 10rem auto 2rem;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.75);
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #e4311d;
+      font-weight: 700;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ccc;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    .form-group input:focus {
+      border-color: #e4311d;
+      outline: none;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .role-selector {
+      display: flex;
+      justify-content: space-around;
+      margin: 1rem 0;
+    }
+
+    .role-selector label {
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+
+    .role-selector input[type="radio"] {
+      margin-right: 0.5rem;
+      accent-color: #e4311d;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #e4311d;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #c42b1a;
+      transform: translateY(-2px);
+    }
+
+    .footer {
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .signup-container {
+        margin: 8rem 1rem 2rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">MANPOWER MARVEL<span style="color: #e4311d;">.</span></h1><span style="color: #fff;">.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Signup Form ======= -->
+  <main class="main">
+    <div class="signup-container">
+      <h2>Signup</h2>
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first_name" required />
+        </div>
+        <div class="form-group">
+          <label for="middle-name">Middle Name (optional)</label>
+          <input type="text" id="middle-name" name="middle_name" />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last_name" required />
+        </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <!-- Inside your <form id="signup-form"> -->
+<div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required />
+  </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address" required />
+  </div>
+  
+        <div class="form-group role-selector">
+          <label><input type="radio" name="role" value="customer" /> Customer</label>
+          <label><input type="radio" name="role" value="craftspeople" checked /> Craftsperson</label>
+        </div>
+        <button type="submit" class="btn">Continue</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- ======= Footer (from Login Page) ======= -->
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Append</span>
+          </a>
+          <p>Manpower Marvel empowers local textile craftsmen to thrive in a global world. Through direct markets and fashion connections, we preserve cultural heritage, ensure fair profits, and weave sustainable futures for artisans everywhere.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li><li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li><li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li><li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Artisan Marketplace</a></li>
+            <li><a href="#">Skill Development</a></li>
+            <li><a href="#">Cultural Storytelling</a></li>
+            <li><a href="#">Marketing Insights</a></li>
+            <li><a href="#">Fashion Industry Network</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>India</p>
+          <p class="mt-4"><strong>Phone:</strong> +91 78938 25 743</p>
+          <p><strong>Email:</strong> info@manpowermarvel.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mt-4">
+      <p>© <strong class="sitename">Append</strong> All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JS -->
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const role = document.querySelector('input[name="role"]:checked').value;
+      if (role === 'craftspeople') {
+        window.location.href = 'signup2-craft.html';
+      } else {
+        window.location.href = 'signup1-customer.html';
+      }
+    });
+  </script>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
